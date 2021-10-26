@@ -35,7 +35,7 @@ const program = async () => {
     statement: MySQLEvents.STATEMENTS.ALL,
     onEvent: (event) => { // You will receive the events here
       console.log(event);
-      const a={ name: "mum", message: "kuy" }
+      const a={ name: "mum", message: "Hello from DB change event" }
       io.on('connection',
        
           io.emit('message', a)
